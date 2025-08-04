@@ -1,0 +1,2 @@
+DELETE http://localhost:3000/api_confeitaria/super/receitas/14724a1b-dced-425a-968d-fec953fde585
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTM2NDczMDQsImV4cCI6MTc1MzY0ODUwNH0.vFNfvGVnKaFk6yj0wKtRsALMa-HyuixYGR2G2fqHxTw

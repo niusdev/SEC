@@ -1,0 +1,15 @@
+//ADICIONAR OS PRODUTOS NO ESTOQUE
+POST http://localhost:3000/api_confeitaria/super/estoque
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTM0NTAzMTgsImV4cCI6MTc1MzQ1MTUxOH0.YhxsF91OFUqrvNHUvb-onRxJ2Pt_WhqJTlrdiWbVx78
+Content-Type: application/json
+
+{
+    "nome": "Farinha",
+    "unidades": 10,
+    "pesoPorUnidade": 1,
+    "unidadeMedida": "kg",
+    "validade": "2025-08-10",
+    "nivelMinimo": 5,
+    "precoCusto": 6.00,
+    "categoria": "Cereal"
+}

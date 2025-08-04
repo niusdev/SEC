@@ -1,0 +1,4 @@
+//DELETAR UM INGREDIENTE DO ESTOQUE PEGANDO PELO ID
+DELETE http://localhost:3000/api_confeitaria/super/estoque/ingrediente/:id
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTM2NDcxMjgsImV4cCI6MTc1MzY0ODMyOH0.ANPxO6fTBT2oxbhYukG0TO9GRsH9d-aQsqPIyGA5PgA
+Content-Type: application/json

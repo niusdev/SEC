@@ -1,0 +1,103 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+/**
+ * quando hospedarmos o banco podemos usar o código abaixo
+ * datasource db {
+ * provider = "mysql"
+ * url      = env("DATABASE_URL")
+ * }
+ */
+
+enum Perfil {
+  FUNCIONARIO_COMUM
+  SUPERVISOR_JUNIOR
+  SUPERVISOR_SENIOR
+}
+
+model tbUsuario {
+  id        String  @id
+  nome      String
+  email     String  @unique
+  senha     String
+  telefone  String
+  perfil    Perfil
+}
+
+enum StatusPedido {
+  PENDENTE
+  CONCLUIDO
+  CANCELADO  
+}
+
+model tbPedido {
+  id              String               @id
+  dataPedido      String
+  nomeCliente     String
+  valorTotal      Float
+  status          StatusPedido
+  pedidoReceitas tbPedidoReceita[]
+}
+
+model tbReceita {
+  id              String                 @id
+  nome            String                 @unique
+  rendimento      String
+  modoDePreparo   String?
+  custoDeProducao Float                  
+  ingredientes    tbReceitaIngrediente[]
+  pedidoReceitas  tbPedidoReceita[]
+}
+
+enum UnidadeMedida {
+  mg  
+  g   
+  kg  
+  ml  
+  l
+  un   
+}
+
+model tbIngredienteEmEstoque {
+  id                  String                 @id
+  nome                String                 @unique
+  unidades            Float                  // número de unidades físicas cadastradas
+  pesoPorUnidade      Float?                 // peso ou volume de uma unidade (opcional para unidade 'un')
+  quantidade          Float                  @default(0.0)
+  unidadeMedida       UnidadeMedida
+  validade            String?                
+  nivelMinimo         Int
+  precoCusto          Float 
+  categoria           String
+  receitas            tbReceitaIngrediente[]
+}
+
+model tbReceitaIngrediente {
+  idReceita     String
+  idIngrediente String
+
+  receita     tbReceita               @relation(fields: [idReceita], references: [id], onDelete: Cascade)
+  ingrediente tbIngredienteEmEstoque  @relation(fields: [idIngrediente], references: [id])
+
+  qtdUnidade     Int?
+  qtdGramasOuMl  Float?
+
+  @@id([idReceita, idIngrediente])
+}
+
+model tbPedidoReceita {
+  pedidoId    String
+  receitaId   String
+  quantidade  Int 
+
+  pedido      tbPedido  @relation(fields: [pedidoId], references: [id], onDelete: Cascade)
+  receita     tbReceita @relation(fields: [receitaId], references: [id], onDelete: Cascade)
+
+  @@id([pedidoId, receitaId])
+}

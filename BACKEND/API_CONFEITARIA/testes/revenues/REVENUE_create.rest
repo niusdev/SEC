@@ -1,0 +1,26 @@
+POST http://localhost:3000/api_confeitaria/super/receitas
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTM1ODI0NDksImV4cCI6MTc1MzU4MzY0OX0.pDRBMtdBuDEvkPLEC7fpshsrhMgfixZYTnA5shpwTt0
+Content-Type: application/json
+
+{
+  "nome": "Bolo",
+  "rendimento": 1,
+  "modoDePreparo": "Misture tudo e asse por 40 minutos.",
+  "ingredientes": [
+    {
+      "ingredienteId": "45f8c169-ab41-4e82-9b60-cf9717c3b599",
+      "quantidadeUsada": 3,
+      "unidadeMedidaUsada": "un"
+    },
+    {
+      "ingredienteId": "de1f5b5b-a689-4a51-9f31-b4aaaabdb4d6",
+      "quantidadeUsada": 250.0,
+      "unidadeMedidaUsada": "ml"
+    },
+    {
+      "ingredienteId": "d6bc475a-601a-4d7b-8dac-486b27dd5312",
+      "quantidadeUsada": 500.0,
+      "unidadeMedidaUsada": "g"
+    }
+  ]
+}

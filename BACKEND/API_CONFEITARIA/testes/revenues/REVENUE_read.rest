@@ -1,0 +1,11 @@
+GET http://localhost:3000/api_confeitaria/super/receitas?nome=bolo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTM1ODM1MDgsImV4cCI6MTc1MzU4NDcwOH0.Rz5lgPmA0IuKjsFqK5i-RHdjNdy3YulLJ50fA77djPA
+###
+
+GET http://localhost:3000/api_confeitaria/super/receitas
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTM2MzcwMzUsImV4cCI6MTc1MzYzODIzNX0.P3Cm-XfScPSaoup9ZF5ayGXv6f8s9y4bECYjt2QkMlY
+###
+
+GET http://localhost:3000/api_confeitaria/super/receitas/fdaf8a50-1e82-4212-b35a-cf5cdaead1db
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTM1ODA3ODgsImV4cCI6MTc1MzU4MTk4OH0.niw77vKTUnfXeDYDbfxXFyEiKQX0FqbEZ_CPQaiIM5c
+###

@@ -1,0 +1,14 @@
+PUT http://localhost:3000/api_confeitaria/super/orders/a70e5de1-9bf1-4d28-9f27-25f007f982c9
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTM2NDY0OTcsImV4cCI6MTc1MzY0NzY5N30.MfOxjmOOnscv6b_Lv9UaS0c2Mt_H7vmiCs65r7PGbh4
+Content-Type: application/json
+
+{
+  "nomeCliente": "Vinícius Gomes",
+  "status": "CONCLUIDO",
+  "receitas": [
+    {
+      "receitaId": "14724a1b-dced-425a-968d-fec953fde585",
+      "qtd": 2
+    }
+  ]
+}

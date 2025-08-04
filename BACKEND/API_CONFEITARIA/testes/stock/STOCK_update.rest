@@ -1,0 +1,27 @@
+//EDITAR DADOS DO INGREDIENTE
+PUT http://localhost:3000/api_confeitaria/super/estoque/ingrediente/68591927-e3b9-45bb-9066-bdcea0286668
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTM2NDcwNjMsImV4cCI6MTc1MzY0ODI2M30.kMhYnICKdefMGxODy7Ye4g0N7oa9H6pgRmlGHDdopu
+Content-Type: application/json
+
+{
+    "unidades": "15/12/2025",
+    "precoCusto": 11.90
+}
+
+###
+
+//EDITAR DADOS DO INGREDIENTE
+PUT http://localhost:3000/api_confeitaria/super/estoque/ingrediente/68591927-e3b9-45bb-9066-bdcea0286668
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTMxNDE5NTIsImV4cCI6MTc1MzE0MzE1Mn0.rMzigQWVdFfXAyGnSAQeK1r7AWQmqy-0hZwlSa3B1yY
+Content-Type: application/json
+
+{
+    "nome": "Farinha",
+    "unidades": 10,
+    "pesoPorUnidade": 1,
+    "unidadeMedida": "kg",
+    "validade": "30/11/2025",
+    "nivelMinimo": 5,
+    "precoCusto": 6.00,
+    "categoria": "Cereal"
+}

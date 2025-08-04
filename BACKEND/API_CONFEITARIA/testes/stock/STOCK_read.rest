@@ -1,0 +1,14 @@
+//BUSCAR INGREDIENTE POR NOME
+GET http://localhost:3000/api_confeitaria/super/estoque?nome=leite
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTMwNjA1MDYsImV4cCI6MTc1MzA2MTcwNn0.u_N5AIjiUTFRDpOGwM7G8YOGvwDu5mUnv2olrWe26aM
+###
+
+//BUSCAR TODOS OS INGREDIENTES
+GET http://localhost:3000/api_confeitaria/super/estoque
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTM2MzY2NTMsImV4cCI6MTc1MzYzNzg1M30.ZCoLkZgqOCxtTQU81N6TzgDUkzcjg6C8tUw_Qa9U_1U
+###
+
+//BUSCAR UM INGREDIENTE PELO ID 
+GET http://localhost:3000/api_confeitaria/super/estoque/ingrediente/cec0418f-0be5-4585-bbf3-307264a60c15
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTMwNjIzMjQsImV4cCI6MTc1MzA2MzUyNH0.VU_nFv4ckeDDf3VWyHo6zGiTAAx28hvYCwHRSDR7HME
+###

@@ -1,0 +1,93 @@
+//Criação de usuário administrador
+POST http://localhost:3000/api_confeitaria/user
+Content-Type: application/json
+
+{
+    "nome": "Administrador_Teste",
+    "email": "adm_teste@gmail.com",
+    "senha": "admin123",
+    "senha_confirmacao": "admin123",
+    "isAdmin": true
+}
+
+###
+
+//Criação de usuário funcionário
+POST http://localhost:3000/api_confeitaria/user
+Content-Type: application/json
+
+{
+    "nome": "Funcionario_Teste",
+    "email": "fun_teste@gmail.com",
+    "senha": "fun123",
+    "senha_confirmacao": "fun123",
+    "isAdmin": false
+}
+
+###
+
+//Rota de Login
+POST http://localhost:3000/api_confeitaria/autenticacao/login
+Content-Type: application/json
+
+{
+    "email": "supervisorsenior@gmail.com",
+    "senha": "12345678"
+}
+
+###
+
+Content-Type: application/json
+
+{
+    "email": "adm_teste@gmail.com",
+    "senha": "admin123"
+}
+
+###
+
+
+###
+
+//Adicionando receita 
+POST http://localhost:3000/api_confeitaria/adm/revenues
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDY5Njg1MDAsImV4cCI6MTc0Njk2OTcwMH0.yyQ2Fr1vgydX6_oqdWXnF0bk-f6MwfYRFgfc5-XrXHk
+Content-Type: application/json
+
+{
+    "nomeDaComida": "Bolo de Chocolate",
+    "rendimento": 1,
+    "ingredientes": [
+        {
+            "idIngrediente": "675a16da-7909-4d6d-9982-d47f67401b62",
+            "qtdUnidade": 3
+        },
+        {
+            "idIngrediente": "5cecccaa-805c-4d7a-8f72-335ba388cf66",
+            "qtdGramasOuMl": 250.0
+        },
+        {
+            "idIngrediente": "61407143-05ea-4137-a8fa-9c7fb34e8687",
+            "qtdGramasOuMl": 180.0
+        },
+        {
+            "idIngrediente": "7063e18d-065c-44e2-aaac-3920ea3a3818",
+            "qtdGramasOuMl": 100.0
+        },
+        {
+            "idIngrediente": "209ace03-77fa-4d6c-90c0-5050291f0d9b",
+            "qtdUnidade": 1
+        }
+  ]
+}
+
+###
+
+//Criar pedido
+POST http://localhost:3000/api_confeitaria/order
+Content-Type: application/json
+
+{
+  "receitaId": "0a33cc59-a0c4-4230-9123-a2876146d4f2",
+  "qtd": 10
+}

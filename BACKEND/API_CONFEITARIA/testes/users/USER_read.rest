@@ -1,0 +1,19 @@
+//BUSCAR FUNCIONÁRIOS POR NOME
+GET http://localhost:3000/api_confeitaria/super/usuarios?nome=nome_funcionario
+Authorization: Bearer token
+###
+
+//BUSCAR TODOS OS FUNCIONÁRIOS
+GET http://localhost:3000/api_confeitaria/super/usuarios
+Authorization: Bearer token
+
+##
+
+//BUSCAR UM FUNCIONÁRIO PELO ID 
+GET http://localhost:3000/api_confeitaria/super/usuarios/:id
+Authorization: Bearer token
+
+###
+
+
+

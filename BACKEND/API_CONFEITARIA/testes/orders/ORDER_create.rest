@@ -1,0 +1,13 @@
+POST http://localhost:3000/api_confeitaria/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTM2NDMxNzgsImV4cCI6MTc1MzY0NDM3OH0.k-FgIVUBsB6SDxjHLU4FZnUOkvbYDHS1ryfM_-BTYlo 
+Content-Type: application/json
+
+{
+  "nomeCliente": "Vinicius Damascena",
+  "receitas": [
+    {
+      "receitaId": "14724a1b-dced-425a-968d-fec953fde585",
+      "qtd": 3
+    }
+  ]
+}

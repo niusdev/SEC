@@ -1,0 +1,51 @@
+//AUTOCADASTRO - SUPERVISOR SENIOR TESTE
+POST http://localhost:3000/api_confeitaria/usuario
+Content-Type: application/json 
+
+{
+    "nome": "SUPERVISOR_SENIOR_TESTE",
+    "email": "ssteste@gmail.com",
+    "senha": "SS_teste789@",
+    "senha_confirmacao": "SS_teste789@",
+    "telefone": "(88) 99999-9999",
+    "perfil": "SUPERVISOR_SENIOR",
+    "senhaValidacaoSup": "senhaSupervisorSenior456"
+}
+
+###
+
+//AUTOCADASTRO - SUPERVISOR JUNIOR TESTE
+POST http://localhost:3000/api_confeitaria/usuario
+Content-Type: application/json 
+
+{
+    "nome": "SUPERVISOR_JUNIOR_TESTE",
+    "email": "sjteste@gmail.com",
+    "senha": "SJ_teste456!",
+    "senha_confirmacao": "SJ_teste456!",
+    "telefone": "(88) 99999-9999",
+    "perfil": "SUPERVISOR_JUNIOR",
+    "senhaValidacaoSup": "senhaSupervisorJunior123"
+}
+
+###
+
+//AUTOCADASTRO - FUNCIONARIO COMUM TESTE
+POST http://localhost:3000/api_confeitaria/usuario
+Content-Type: application/json 
+
+{
+    "nome": "FUNCIONARIO_COMUM_TESTE",
+    "email": "fcteste@gmail.com",
+    "senha": "FC_teste123#",
+    "senha_confirmacao": "FC_teste123#",
+    "telefone": "(88) 99999-9999",
+    "perfil": "FUNCIONARIO_COMUM"
+}
+
+###
+
+
+
+
+

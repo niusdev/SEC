@@ -1,0 +1,21 @@
+//EDITAR DADOS PRÓPIOS - pode-se editar um, mais de um ou todos os dados.
+PUT http://localhost:3000/api_confeitaria/usuario/:id
+Authorization: Bearer token
+Content-Type: application/json
+
+{
+    "nome": "SUPERVISOR_SENIOR_TESTE",
+    "telefone": "(88) 99999-9999"
+}
+
+###
+
+//EDITAR PERFIL DE OUTROS FUNCIONÁRIOS (SOMENTE PARA SENIORS)
+PUT http://localhost:3000/api_confeitaria/super/usuarios/:id/perfil
+Authorization: Bearer token
+Content-Type: application/json
+
+{
+    "solicitanteId": "id_funcionario",
+    "novoPerfil": "FUNCIONARIO_COMUM"
+}

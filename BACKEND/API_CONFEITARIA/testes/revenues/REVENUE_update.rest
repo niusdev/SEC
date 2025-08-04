@@ -1,0 +1,36 @@
+PUT http://localhost:3000/api_confeitaria/super/receitas/14724a1b-dced-425a-968d-fec953fde585
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTM2MzU1NDcsImV4cCI6MTc1MzYzNjc0N30.I6JUR9BE1Xo8FKRA2eiJsPRc9QQbw6r15vgQOqKrGHs
+Content-Type: application/json
+
+{
+  "nome": "Bolo de Chocolate",
+  "rendimento": 12,
+  "modoDePreparo": "Bata tudo e asse"
+}
+
+###
+
+PUT http://localhost:3000/api_confeitaria/super/receitas/14724a1b-dced-425a-968d-fec953fde585
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTM2MzU2OTEsImV4cCI6MTc1MzYzNjg5MX0.VqEmEpO0bZeClxcW8uMTtxXr57NGJc-CodiJJS7fQmQ
+Content-Type: application/json
+
+{
+  "nome": "Bolo de Chocolate com Morango",
+  "rendimento": 15,
+  "modoDePreparo": "Misture todos os ingredientes, asse por 40 minutos.",
+  "ingredientes": [
+    {
+      "idIngrediente": "d6bc475a-601a-4d7b-8dac-486b27dd5312",
+      "quantidadeUsada": 600,
+      "unidadeMedidaUsada": "g"
+    },
+    {
+      "idIngrediente": "de1f5b5b-a689-4a51-9f31-b4aaaabdb4d6",
+      "quantidadeUsada": 400,
+      "unidadeMedidaUsada": "ml"
+    }
+  ]
+}
+
+
+###
